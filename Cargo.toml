@@ -1,0 +1,17 @@
+[package]
+name = "sdk-cli"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.rust-analyzer]
+rustc_private = true
+
+[[bin]]
+name = "sdk_cli"
+path = "src/main.rs"
+
+[lib]
+name = "sdk_api"
+path = "src/lib.rs"
+
+[dependencies]
