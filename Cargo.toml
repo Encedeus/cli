@@ -1,5 +1,5 @@
 [package]
-name = "sdk-cli"
+name = "cli"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,11 +7,11 @@ edition = "2021"
 rustc_private = true
 
 [[bin]]
-name = "sdk_cli"
+name = "cli"
 path = "src/main.rs"
 
 [lib]
-name = "sdk_api"
+name = "cli_api"
 path = "src/lib.rs"
 
 [dependencies]

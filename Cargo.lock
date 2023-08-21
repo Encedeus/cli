@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "sdk-cli"
+name = "cli"
 version = "0.1.0"
