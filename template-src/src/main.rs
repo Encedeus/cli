@@ -1,11 +1,10 @@
 use include_dir::{include_dir, Dir};
+use encedeus_js_runtime::{Runtime};
 
 fn main() {
-    use encedeus_js_runtime as q;
-
     static JS_SRC: Dir = include_dir!("/mnt/h/Programming/Web/Workspace/Projects/Encedeus/test/js");
 
-    let mut rt = q::Runtime::new(); 
+    let mut rt = Runtime::new();
     rt.run_with_context(|ctx| {
         let file_path = String::from(JS_SRC.get_file("main.js").unwrap().path().to_str().unwrap());
         
